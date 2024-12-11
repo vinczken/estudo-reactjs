@@ -13,7 +13,7 @@ export default function App() {
       <h2> Estudando JSX </h2>
       <ul>
         <li>
-          <Link to='/contato'>Ir para Contato</Link>
+          <Link to='/contact'>Ir para Contato</Link>
         </li>
       </ul>
     </div>
