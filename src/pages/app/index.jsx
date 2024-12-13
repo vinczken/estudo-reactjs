@@ -28,6 +28,9 @@ export default function App() {
           <li>
             <Link to='/contact'>Ir para Contato</Link>
           </li>
+          <li>
+            <Link to='/eventos'>Ir para Eventos</Link>
+          </li>
         </ul>
       </section>
 
