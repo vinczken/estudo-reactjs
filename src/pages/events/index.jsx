@@ -2,20 +2,20 @@ import './index.scss';
 
 export default function Events() {
 
-    function justClicked() {
+    function JustClicked() {
         alert('Hi, the user just clicked!');
     }
 
-    function justMovedMouse(){
+    function JustMovedMouse(){
         alert('Hi, the user just moved the mouse!');
     }
 
-    function justChangedTheInput(e){
+    function JustChangedTheInput(e){
         let newValue = e.target.value;
         alert('Hi, the user just changed the input value to: ' + newValue);
     }
 
-    function justChecked(e){
+    function JustChecked(e){
         let newValue = e.target.checked;
         alert('Hi, the user just changed the check value to: ' + newValue);
     }
@@ -27,13 +27,13 @@ export default function Events() {
             </header>
 
             <section className='section'>
-                <h1 onMouseMove={justMovedMouse}> Entendendo Eventos </h1>
+                <h1 onMouseMove={JustMovedMouse}> Entendendo Eventos </h1>
 
-                <p onClick={justClicked}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, leo vitae congue fringilla, purus ante suscipit sapien, ut placerat ex orci in felis. Proin blandit neque nec congue varius. Phasellus odio eros, posuere sit amet enim ac, sodales pellentesque sapien. Proin pulvinar semper leo a venenatis. Fusce sagittis lectus vel pharetra malesuada. Nam maximus eu sem ut ornare. Praesent nisi justo, aliquam eu ipsum sit amet, lobortis rhoncus massa. In sit amet eros euismod, vulputate odio vitae, dictum sapien. Aliquam pellentesque diam et fringilla aliquet. Nulla vulputate ultrices risus, a ornare nibh dictum et.</p>
+                <p onClick={JustClicked}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, leo vitae congue fringilla, purus ante suscipit sapien, ut placerat ex orci in felis. Proin blandit neque nec congue varius. Phasellus odio eros, posuere sit amet enim ac, sodales pellentesque sapien. Proin pulvinar semper leo a venenatis. Fusce sagittis lectus vel pharetra malesuada. Nam maximus eu sem ut ornare. Praesent nisi justo, aliquam eu ipsum sit amet, lobortis rhoncus massa. In sit amet eros euismod, vulputate odio vitae, dictum sapien. Aliquam pellentesque diam et fringilla aliquet. Nulla vulputate ultrices risus, a ornare nibh dictum et.</p>
                 <br />
-                <input onChange={justChangedTheInput} type='text' placeholder='Digite aqui alguma coisa' />
+                <input onChange={JustChangedTheInput} type='text' placeholder='Digite aqui alguma coisa' />
 
-                <textarea onChange={justChangedTheInput}>
+                <textarea onChange={JustChangedTheInput}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, leo vitae congue fringilla, purus ante suscipit sapien, ut placerat ex orci in felis. Proin blandit neque nec congue varius. Phasellus odio eros, posuere sit amet enim ac, sodales pellentesque sapien. Proin pulvinar semper leo a venenatis. Fusce sagittis lectus vel pharetra malesuada. Nam maximus eu sem ut ornare. Praesent nisi justo, aliquam eu ipsum sit amet, lobortis rhoncus massa. In sit amet eros euismod, vulputate odio vitae, dictum sapien. Aliquam pellentesque diam et fringilla aliquet. Nulla vulputate ultrices risus, a ornare nibh dictum et.
                 </textarea>
 
@@ -44,8 +44,8 @@ export default function Events() {
                 </select>
 
                 <div className='group'>
-                    <input onChange={justChecked} type='checkbox' /> Opção 1
-                    <input onChange={justChecked} type='checkbox' /> Opção 2
+                    <input onChange={JustChecked} type='checkbox' /> Opção 1
+                    <input onChange={JustChecked} type='checkbox' /> Opção 2
                 </div>
 
                 <div className='group'>
@@ -57,7 +57,7 @@ export default function Events() {
                     </div>
                 </div>
 
-                <button onClick={justClicked}> Clique aqui </button>
+                <button onClick={JustClicked}> Clique aqui </button>
 
             </section>
         </div>

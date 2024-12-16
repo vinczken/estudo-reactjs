@@ -31,6 +31,9 @@ export default function App() {
           <li>
             <Link to='/eventos'>Ir para Eventos</Link>
           </li>
+          <li>
+            <Link to='/varstate'>Ir para Variável de Estado</Link>
+          </li>
         </ul>
       </section>
 
